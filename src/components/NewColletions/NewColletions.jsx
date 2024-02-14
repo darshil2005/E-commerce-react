@@ -1,6 +1,7 @@
 import React from 'react'
 import new_collections from '../Assets/new_collections' 
 import Item from '../Item/Item'
+// dsddsadada
 
 const NewColletions = () => {
   return (
