@@ -4,7 +4,7 @@ import React from 'react'
 const Item = (props) => {
   return (
     <div className='scale-1 hover:scale-105 transition-all shadow-xl overflow-hidden p-7'>
-      <img src={props.image} alt="" />
+      <img src={props.image} alt="item" />
       <p className='pt-5 pb-2 font-medium'>{props.name}</p>
       <div className='flex gap-4'>
         <p className='font-semibold'>${props.new_price}</p>
