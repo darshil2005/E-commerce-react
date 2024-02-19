@@ -3,7 +3,7 @@ import exclusive_image from '../Assets/exclusive_image.png'
 
 const Offers = () => {
     return (
-        <div className='container mx-auto px-20 py-12'>
+        <div className='container mx-auto px-20 pt-12'>
             <div className='bg-gradient-to-t from-purple-50 to-purple-200 flex justify-around items-center'>
                 <div className=''>
                     <h1 className='text-6xl font-semibold leading-tight'>Exclusive</h1>

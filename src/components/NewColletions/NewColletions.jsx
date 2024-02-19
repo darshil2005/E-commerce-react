@@ -7,7 +7,7 @@ const NewColletions = () => {
   return (
     <div>
        <div className=''>
-            <div className='container mx-auto px-20 flex flex-col justify-center items-center gap-2 py-12'>
+            <div className='container mx-auto px-20 flex flex-col justify-center items-center gap-2 pt-20'>
                 <h1 className='text-4xl font-semibold text-black'>New Collections</h1>
                 <hr className='w-44 h-[6px] bg-stone-800 rounded-xl' />
                 <div className='grid grid-cols-4 gap-7 py-12'>
