@@ -8,7 +8,7 @@ const Navbar = () => {
   
   return (
 
-    <nav className='flex justify-around p-4 shadow-lg'>
+    <nav className='flex justify-around p-4 shadow-lg md:hidden'>
       <div className="flex items-center gap-2">
         <img src={logo} alt="" />
         <p className='text-black text-4xl font-semibold'>SHOPPER</p>
