@@ -12,7 +12,7 @@ const Hero = () => {
           <div>
             <div className='flex gap-5 items-center'>
               <p className='text-black lg:text-7xl lg:font-bold md:leading-tight md:font-semibold md:text-5xl'>new</p>
-              <img className='lg:h-20 md:h-13' src={hand_icon} alt="" />
+              <img className='lg:h-20 md:h-14' src={hand_icon} alt="" />
             </div>
             <p className='text-black lg:text-7xl lg:font-bold md:leading-tight md:font-semibold md:text-5xl'>collections</p>
             <p className='text-black lg:text-7xl lg:font-bold md:leading-tight md:font-semibold md:text-5xl'>for everyone</p>

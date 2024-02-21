@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import star_icon from '../Assets/star_icon.png'
 import star_dull_icon from '../Assets/star_dull_icon.png'
 
 
 const ProductDisplay = (props) => {
     const { product } = props;
+    useEffect( ()=> {
+        window.scrollTo(0,0);
+    },[])
     return (
-        <div className='container mx-auto px-20'>
-            <div className='flex gap-16'>
-                <div className='flex gap-5 w-[730px] flex-[0_0_730px]'>
+        <div className='container mx-auto px-20 md:px-5'>
+            <div className='xl:flex md:flex-col gap-16'>
+                <div className='flex gap-5 xl:w-[730px] xl:flex-[0_0_730px]'>
                     <div className='flex flex-col gap-5'>
                         <img src={product.image} alt="" className='h-40 cursor-pointer' />
                         <img src={product.image} alt="" className='h-40 cursor-pointer' />
@@ -16,7 +19,7 @@ const ProductDisplay = (props) => {
                         <img src={product.image} alt="" className='h-40 cursor-pointer' />
                     </div>
                     <div>
-                        <img src={product.image} alt="" className='w-[586px] h-[700px] cursor-pointer' />
+                        <img src={product.image} alt="" className='w-[586px] h-[700px] md:w-[500px] cursor-pointer' />
                     </div>
                 </div>
                 <div className='w-auto py-2'>
