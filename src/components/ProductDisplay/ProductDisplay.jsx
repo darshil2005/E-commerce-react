@@ -10,8 +10,8 @@ const ProductDisplay = (props) => {
     },[])
     return (
         <div className='container mx-auto px-20 md:px-5'>
-            <div className='xl:flex md:flex-col gap-16'>
-                <div className='flex gap-5 xl:w-[730px] xl:flex-[0_0_730px]'>
+            <div className='flex xl:flex-row md:flex-col 1xl:gap-14 xl:gap-10 md:gap-5'>
+                <div className='flex gap-5 flex-1 lg:justify-center lg:items-center'>
                     <div className='flex flex-col gap-5'>
                         <img src={product.image} alt="" className='h-40 cursor-pointer' />
                         <img src={product.image} alt="" className='h-40 cursor-pointer' />
@@ -19,24 +19,24 @@ const ProductDisplay = (props) => {
                         <img src={product.image} alt="" className='h-40 cursor-pointer' />
                     </div>
                     <div>
-                        <img src={product.image} alt="" className='w-[586px] h-[700px] md:w-[500px] cursor-pointer' />
+                        <img src={product.image} alt="" className='w-[586px] h-[700px] md:w-auto cursor-pointer' />
                     </div>
                 </div>
-                <div className='w-auto py-2'>
-                    <h1 className='text-[34px] font-medium'>{product.name}</h1>
-                    <div className='flex gap-2 mt-5'>
+                <div className='w-auto py-2 flex-1'>
+                    <h1 className='text-[34px] font-medium mt-5 '>{product.name}</h1>
+                    <div className='flex gap-1 items-center mt-5'>
                         <img src={star_icon} alt="" />
                         <img src={star_icon} alt="" />
                         <img src={star_icon} alt="" />
                         <img src={star_icon} alt="" />
                         <img src={star_dull_icon} alt="" />
-                        <p>(122)</p>
+                        <p className='mt-1'>(122)</p>
                     </div>
-                    <div className='flex gap-8 mt-12'>
+                    <div className='flex gap-8 mt-12 md:gap-5'>
                         <div className='text-3xl text-gray-500 line-through'>${product.old_price}</div>
                         <div className='text-3xl text-red-500 font-medium'>${product.new_price}</div>
                     </div>
-                    <div className='text-base mt-10'>
+                    <div className='text-base mt-10 md:text-lg'>
                         A lightweight, usually knitted. puJover shirt, close-fitting ond with a neckline
                         and short sleeves, worn as an undershirt or outer garment.
                     </div>
@@ -51,11 +51,11 @@ const ProductDisplay = (props) => {
                         </div>
                     </div>
                     <div className='mt-6'>
-                        <button className='bg-red-500 text-white px-10 py-4'>ADD TO CART</button>
+                        <button className='bg-red-500 text-white px-10 py-4 md:px-7 md:py-4 md:text-lg'>ADD TO CART</button>
                     </div>
                     <div className='mt-14'>
-                        <p><span className='font-semibold'>Category :</span>Women, T-shirt, Crop Top</p>
-                        <p className='mt-3'><span className='font-semibold'>Tags :</span>Modern, Latest</p>
+                        <p className='md:text-lg'><span className='font-semibold mr-2'>Category :</span>Women, T-shirt, Crop Top</p>
+                        <p className='mt-3 md:text-lg'><span className='font-semibold mr-2'>Tags :</span>Modern, Latest</p>
                     </div>
                 </div>
             </div>

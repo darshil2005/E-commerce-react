@@ -4,7 +4,7 @@ const LoginSignUp = () => {
   return (
     <div className='bg-pink-200 px-12'>
       <div className='container mx-auto flex justify-center items-center py-20'>
-        <div className='bg-white px-10 py-12 lg:w-[40%] md:w-[70%]'>
+        <div className='bg-white px-10 py-12 1xl:w-[40%] xl:w-[50%] lg:w-[60%] md:w-[70%]'>
           <h1 className='lg:text-4xl font-medium md:text-3xl'>Sign Up</h1>
           <input type="text" className='md:px-2 md:py-2 md:placeholder:text-sm lg:placeholder:text-base mt-5 outline-none border border-dashed border-gray-300 placeholder:text-gray-400 lg:px-3 lg:py-3 w-full' placeholder='Your Name' /><br />
           <input type="email" className='md:px-2 md:py-2 md:placeholder:text-sm lg:placeholder:text-base mt-5 outline-none border border-dashed border-gray-300 placeholder:text-gray-400 lg:px-3 lg:py-3 w-full' placeholder='Email Address' /><br />

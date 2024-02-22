@@ -9,9 +9,9 @@ const Footer = () => {
     <div className='container mx-auto px-20 pt-12 flex justify-center items-center flex-col'>
         <div className='flex items-center gap-5 font-medium'>
             <img src={footer_logo} alt="" />
-            <p className='text-5xl'>SHOPPER</p>
+            <p className='text-5xl xs:text-base'>SHOPPER</p>
         </div>
-        <div className='flex items-center gap-12 py-10'>
+        <div className='flex items-center gap-12 py-10 md:text-lg xs:gap-2 xs:flex-col md:flex-row'>
             <a href="#">Company</a>
             <a href="#">Products</a>
             <a href="#">Offices</a>
