@@ -2,13 +2,31 @@ import React, { useState } from 'react'
 import logo from '../Assets/logo.png'
 import cart_icon from '../Assets/cart_icon.png'
 import { Link } from 'react-router-dom';
+import './Navbar.css'
 
 const Navbar = () => {
   const [menu, setMenu] = useState("Shop");
 
   return (
-
-    <nav className='lg:flex justify-around p-4 shadow-lg md:hidden xs:hidden'>
+    <div>
+      {/* <div className='lg:hidden'>
+        <nav role="navigation">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">  
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>About</li></a>
+              <a href="#"><li>Info</li></a>
+              <a href="#"><li>Contact</li></a>
+              <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+            </ul>
+          </div>
+        </nav>
+      </div> */}
+      <nav className='lg:flex justify-around p-4 shadow-lg md:hidden xs:hidden'>
       <div className="flex items-center gap-2">
         <img src={logo} alt="" />
         <p className='text-black text-4xl font-semibold'>SHOPPER</p>
@@ -31,6 +49,7 @@ const Navbar = () => {
         <div className='absolute w-5 h-5 -right-3 top-1 bg-red-500 text-white rounded-full flex items-center justify-center'>0</div>
       </div>
     </nav>
+    </div>
   )
 }
 

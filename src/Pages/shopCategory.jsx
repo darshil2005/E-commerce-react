@@ -16,7 +16,7 @@ const ShopCategory = (props) => {
           Sort by <img src={dropdown_icon} alt="drop_down_icon" />
         </div>
       </div>
-      <div className='grid lg:grid-cols-4 gap-7 py-12 md:grid-cols-2 md:px-0 xs:px-10'>
+      <div className='grid xl:grid-cols-4 lg:grid-cols-3 gap-7 py-12 md:grid-cols-2 md:px-0 xs:px-10'>
         {all_product.map((item, i) => {
           if (props.category === item.category) {
             return <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} />
