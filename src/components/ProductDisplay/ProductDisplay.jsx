@@ -5,21 +5,21 @@ import star_dull_icon from '../Assets/star_dull_icon.png'
 
 const ProductDisplay = (props) => {
     const { product } = props;
-    useEffect( ()=> {
-        window.scrollTo(0,0);
-    },[])
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
-        <div className='container mx-auto px-20 md:px-5'>
-            <div className='flex xl:flex-row md:flex-col 1xl:gap-14 xl:gap-10 md:gap-5'>
-                <div className='flex gap-5 flex-1 lg:justify-center lg:items-center'>
-                    <div className='flex flex-col gap-5'>
-                        <img src={product.image} alt="" className='h-40 cursor-pointer' />
-                        <img src={product.image} alt="" className='h-40 cursor-pointer' />
-                        <img src={product.image} alt="" className='h-40 cursor-pointer' />
-                        <img src={product.image} alt="" className='h-40 cursor-pointer' />
+        <div className='container mx-auto px-20 md:px-5 xs:px-0'>
+            <div className='flex xl:flex-row md:flex-col xs:flex-col 1xl:gap-14 xl:gap-10 md:gap-5'>
+                <div className='flex md:flex-row xs:flex-col-reverse gap-5 flex-1 lg:justify-center lg:items-center'>
+                    <div className='flex md:flex-col gap-5'>
+                        <img src={product.image} alt="" className='md:h-40 xs:h-20 cursor-pointer' />
+                        <img src={product.image} alt="" className='md:h-40 xs:h-20 cursor-pointer' />
+                        <img src={product.image} alt="" className='md:h-40 xs:h-20 cursor-pointer' />
+                        <img src={product.image} alt="" className='md:h-40 xs:h-20 cursor-pointer' />
                     </div>
                     <div>
-                        <img src={product.image} alt="" className='w-[586px] h-[700px] md:w-auto cursor-pointer' />
+                        <img src={product.image} alt="" className='md:h-[700px] md:w-auto xs:w-auto xs:h-[450px] cursor-pointer' />
                     </div>
                 </div>
                 <div className='w-auto py-2 flex-1'>
